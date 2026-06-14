@@ -24,9 +24,38 @@
 ## 运行步骤
 
 1. 安装依赖
-```bash
 npm install
 2. 启动项目
-、、、bash
 npm run dev
 3. 浏览器打开 http://localhost:5173
+
+## 使用说明
+搜索城市请输入英文名（如 Beijing、Shanghai）
+
+点击城市卡片查看详情（含温度趋势图表）
+
+按住左侧 ⋮⋮ 图标拖拽排序城市列表
+
+点击右上角 🌓 切换深色模式
+
+## 项目结构
+
+src/
+├── views/          # 页面组件
+│   ├── HomeView.vue    # 首页
+│   └── CityDetail.vue  # 详情页
+├── stores/         # Pinia 状态管理
+│   └── cityStore.js
+├── utils/          # 工具函数
+│   └── weatherApi.js   # API 封装
+├── router/         # 路由配置
+├── App.vue
+└── main.js
+
+## API
+
+使用 OpenWeatherMap 免费天气 API
+
+## 作者
+
+刘雨鑫
